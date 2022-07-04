@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header,
+section,
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  font-size: 14px;
+  color: hsl(230, 17%, 14%);
+  font-family: 'Inter', sans-serif;
+  background: hsl(0, 0%, 100%);
+}
+body.active {
+  background: hsl(230, 17%, 14%);
+  color: #fff;
+  transition: all 0.5s ease;
+}
+body.active .wrapper .card_item {
+  background: hsl(228, 28%, 20%);
+}
+body.active .wrapper .card_item .item__tracking p {
+  color: hsl(163, 72%, 41%);
+}
+button {
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1105px;
+  margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  padding-top: 30px;
+}
+.header .wrapper {
+  margin-bottom: 35px;
+}
+.header .wrapper .header__info .header__title p {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.header .wrapper .header__info .header__total p {
+  color: hsl(228, 34%, 66%);
+  font-weight: 700;
+}
+.header .wrapper .header__switcher {
+  padding-top: 15px;
+}
+.header .wrapper .header__switcher .switcher__text {
+  cursor: pointer;
+}
+.header .wrapper .header__switcher .switcher__text p {
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+}
+.header .header__cards .card_item {
+  text-align: center;
+  background: hsl(227, 47%, 96%);
+  padding: 30px 55px;
+  position: relative;
+  margin-right: 20px;
+}
+.header .header__cards .card_item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: hsl(208, 92%, 53%);
+  border-radius: 5px;
+}
+.header .header__cards .card_item .item__social {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.header .header__cards .card_item .item__number p {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.header .header__cards .card_item .item__subtitle p {
+  color: hsl(228, 12%, 44%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.header .header__cards .card_item .item__tracking {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.header .header__cards .card_item .item__tracking .img {
+  margin-top: -4px;
+}
+.header .header__cards .card_item .item__tracking p {
+  color: hsl(163, 72%, 41%);
+}
+.overview .overview__title {
+  margin-bottom: 1rem;
+}
+.overview .overview__title p {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  font-size: 1.5rem;
+}
+.overview .wrapper {
+  flex-wrap: wrap;
+}
+.overview .wrapper .card_item {
+  margin-bottom: 2rem;
+  text-align: center;
+  background: hsl(227, 47%, 96%);
+  width: 248px;
+  padding: 30px 20px 10px;
+}
+.overview .wrapper .card_item .overview__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.overview .wrapper .card_item .overview__inner .inner__name p {
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+}
+.overview .wrapper .card_item .overview__inner .number p {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.overview .wrapper .card_item .overview__inner .item__tracking {
+  display: flex;
+  gap: 3px;
+  margin-top: 20px;
+}
+.overview .wrapper .card_item .overview__inner .item__tracking .img {
+  margin-top: -4px;
+}
+.overview .wrapper .card_item .overview__inner .item__tracking p {
+  color: hsl(163, 72%, 41%);
+}

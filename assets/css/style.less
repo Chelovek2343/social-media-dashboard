@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-size: 14px;
+    color: hsl(230, 17%, 14%);
+    font-family: 'Inter', sans-serif;
+    background: hsl(0, 0%, 100%);
+
+    &.active{
+        background: hsl(230, 17%, 14%);
+        color: #fff;
+        transition: all .5s ease;
+
+        .wrapper{
+            .card_item{
+                background: hsl(228, 28%, 20%);
+
+                .item__tracking{
+                    p{
+                        color: hsl(163, 72%, 41%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1105px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    padding-top: 30px;
+
+    .wrapper{
+        margin-bottom: 35px;
+
+        .header__info{
+            .header__title{
+                p{
+                    font-weight: 700;
+                    font-size: 2rem;
+                }
+            }
+
+            .header__total{
+                p{
+                    color: hsl(228, 34%, 66%);
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .header__switcher{
+            padding-top: 15px;
+
+            .switcher__text{
+                cursor: pointer;
+
+                p{
+                    font-weight: 700;
+                    color: hsl(228, 34%, 66%);
+                }
+            }
+        }
+    }
+
+    .header__cards{
+        .card_item{
+            text-align: center;
+            background: hsl(227, 47%, 96%);
+            padding: 30px 55px;
+            position: relative;
+            margin-right: 20px;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: hsl(208, 92%, 53%);
+                border-radius: 5px;
+            }
+
+            .item__social{
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+            }
+
+            .item__number{
+                p{
+                    font-weight: 700;
+                    font-size: 3rem;
+                }
+            }
+
+            .item__subtitle{
+                p{
+                    color: hsl(228, 12%, 44%);
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                }
+            }
+
+            .item__tracking{
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+
+                .img{
+                    margin-top: -4px;
+                }
+
+                p{
+                    color: hsl(163, 72%, 41%);
+                }
+            }
+        }
+    }
+}
+
+.overview{
+    .overview__title{
+        margin-bottom: 1rem;
+
+        p{
+            font-weight: 700;
+            color: hsl(228, 12%, 44%);
+            font-size: 1.5rem;
+        }
+    }
+
+    .wrapper{
+        flex-wrap: wrap;
+
+        .card_item{
+            margin-bottom: 2rem;
+            text-align: center;
+            background: hsl(227, 47%, 96%);
+            width: 248px;
+            padding: 30px 20px 10px;
+
+            .overview__inner{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .inner__name{
+                    p{
+                        color: hsl(228, 12%, 44%);
+                        font-weight: 700;
+                    }
+                }
+
+                .number{
+                    p{
+                        font-weight: 700;
+                        font-size: 2rem;
+                    }
+                }
+
+                .item__tracking{
+                    display: flex;
+                    gap: 3px;
+                    margin-top: 20px;
+
+                    .img{
+                        margin-top: -4px;
+                    }
+
+                    p{
+                        color: hsl(163, 72%, 41%);
+                    }
+                }
+            }
+        }
+    }
+}
